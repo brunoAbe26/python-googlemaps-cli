@@ -1,0 +1,4 @@
+requests
+googlemaps
+urllib
+mysqlclient
