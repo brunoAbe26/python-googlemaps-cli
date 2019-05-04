@@ -31,7 +31,7 @@ sencacao = response['currently']['apparentTemperature']
 print(f"Temperatura: {temp} ºC")
 print(f"Sensação térmica: {sencacao} ºC")
 
-conn = MySQLdb.connect(db='temperatura', user='root', password='rocambole')
+conn = MySQLdb.connect(db='temperatura', user='root', password='rocambole', host='35.199.90.147')
 cur = conn.cursor()
 cur.execute(f'''
         INSERT INTO consultas (local, temp, sensacao_termica, data_consulta) VALUES('{local}', {temp}, {sencacao}, '{datetime.now()}')

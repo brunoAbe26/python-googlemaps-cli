@@ -1,3 +1,4 @@
 requests
 googlemaps
 mysqlclient
+google-cloud-storage
